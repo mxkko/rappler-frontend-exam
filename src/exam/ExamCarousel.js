@@ -60,7 +60,7 @@ class ExamCarousel extends Component {
 									{
 										items.data.map((itemList, i) => {
 											return(
-												<Carousel.Item>
+												<Carousel.Item key={i}>
 													<img 
 														className="carousel-image"
 														src={itemList.images[0].full}
@@ -80,7 +80,6 @@ class ExamCarousel extends Component {
 										})
 									}
 								</Carousel>
-								{console.log(items)}
 							</div>
 						</div>
 					</div>
