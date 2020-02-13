@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  font-family: "Roboto" !important;
+}
+
+.error-message {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  color: #a63c06;
+}
+
+.error-message svg {
+  margin-right: 16px;
+  font-size: 20px;
+}
+
+.loading-message {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.loading-message svg {
+  margin-right: 16px;
+  animation: spin infinite 2s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.carousel-image {
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+.carousel-shade {
+  width: 100%;
+  height: 500px;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel-caption .headline {
+  font-weight: bold;
+  text-align: left;
+}
+
+.carousel-caption .metadesc {
+  text-align: left;
+}
